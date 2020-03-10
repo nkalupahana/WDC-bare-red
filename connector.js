@@ -1,3 +1,4 @@
+/* SAMPLE WEB DATA CONNECTOR JS: https://github.com/tableau/webdataconnector/blob/master/Examples/js/earthquakeUSGS.js */
 /* global tableau reqwest */
 
 (function() {
@@ -47,6 +48,7 @@
     connector.getData = (table, done) => {
         // Get data (gets 7-day hourly forcast (extended); excludes all other data)
         // Format: JSON-P
+        // URL: `https://api.darksky.net/forecast/${API_KEY}/${LOCATION}?extend=hourly&exclude=currently,minutely,daily,alerts,flags`
 
         // A reqwest call should go here!
     };
